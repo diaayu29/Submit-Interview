@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import LayoutWrapper from '../../components/utility/layoutWrapper.js';
 import confirm from './confirm.js';
 
+// Return template to enter code
+
 export default class extends Component {
   render() {
     const wisgetPageStyle = {
       display: 'block',
       margin: 'auto'
     };
-
-
-
  
     return (
       <LayoutWrapper>

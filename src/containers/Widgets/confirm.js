@@ -1,21 +1,10 @@
 import Data from './dataKey.json';
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import Coba from './timePicker'
 import Warning from './warning';
-// import axios from 'axios';
 
-
-// function handleUpdate(data) {
-//   const requestOptions = {
-//     method: 'PUT',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ title: 'React Hooks PUT Request Example' })
-// };
-//   console.log(data.target);
-//   axios.put("https://bv-online-assessment.herokuapp.com/api/bookings/:booking_code/update-eta", requestOptions)
-//   .then(res => console.log(res))
-// }
+// Add data when the booking code is true
 
 function confirm() {
   const value = document.getElementsByClassName("SearchKey")[0]

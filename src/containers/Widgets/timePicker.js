@@ -1,3 +1,5 @@
+// Add time picker
+
 import 'rc-time-picker/assets/index.css';
 
 import React from 'react';
