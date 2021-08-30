@@ -17,7 +17,7 @@ export default class extends Component {
           <h4>Your Booking Code</h4>
           <input placeholder="KJSH87HGDK" className="SearchKey" onInput={confirm} >
           </input>
-          <div className="cetakData" id="printData"></div>
+          <div id="printData"></div>
         </div>
       </LayoutWrapper>
     );

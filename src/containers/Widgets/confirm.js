@@ -1,14 +1,13 @@
 import Data from './dataKey.json';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Coba from './timePicker'
-import Warning from './warning';
+import TimePickers from './timePicker'
+import TextAlert from './TextAlert';
 
 // Add data when the booking code is true
 
 function confirm() {
   const value = document.getElementsByClassName("SearchKey")[0]
-
 
   for(let i = 0; i < Data.length; i++) {
     if(value.value !== Data[i].key) {
@@ -34,7 +33,7 @@ function confirm() {
             <p>Property Name : {result[i].property_name}</p>
             <span>Check in date : {result[i].check_in_date}</span>
             <span>Check out date : {result[i].check_out_date}</span>
-            <p id="ArrivalTime">Arrival time : <Coba></Coba> <Warning></Warning></p>
+            <p id="ArrivalTime">Arrival time : <TimePickers></TimePickers> <TextAlert></TextAlert></p>
           </div>,
           document.getElementById("printData")
          )

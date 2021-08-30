@@ -1,12 +1,14 @@
 // Add Time Picker
 
+
+import 'rc-time-picker/assets/index.css';
 import React from 'react';
 import moment from 'moment';
 import TimePicker from 'rc-time-picker';
 import confirm from './confirm.js';
+
 const format = 'h:mm a';
 const now = moment().hour(0).minute(0);
-
 const myDataObject = {
   arrival_time: "10:00"
 }
@@ -29,23 +31,23 @@ const putData = async ( ) =>{
 
 
 
-function Coba() {
+function TimePickers() {
 
   if(confirm === false) {
     return console.log("gagal")
   } else {
   return (
     <TimePicker
-      showSecond={false}
-      defaultValue={now}
-      className="xxx"
-      onChange={putData}
-      format={format}
-      use12Hours
-      inputReadOnly
-    />
+    showSecond={false}
+    defaultValue={now}
+    className="xxx"
+    onChange={putData}
+    format={format}
+    use12Hours
+    inputReadOnly
+  />
     )
   }
 }
 
-export default Coba;
+export default TimePickers;
