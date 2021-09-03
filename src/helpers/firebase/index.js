@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import '@firebase/auth';
 import ReduxSagaFirebase from 'redux-saga-firebase';
 import 'firebase/firestore';
 import { firebaseConfig } from '../../settings';
