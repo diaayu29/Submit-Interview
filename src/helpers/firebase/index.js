@@ -1,8 +1,11 @@
 import firebase from 'firebase';
-import '@firebase/auth';
+import 'firebase/auth';
+// import firebase from 'firebase/app';
+import 'firebase/firestore'
 import ReduxSagaFirebase from 'redux-saga-firebase';
 import 'firebase/firestore';
 import { firebaseConfig } from '../../settings';
+
 
 const valid =
   firebaseConfig && firebaseConfig.apiKey && firebaseConfig.projectId;
